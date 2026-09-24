@@ -1,0 +1,110 @@
+<!-- Theme Cards Grid (4 Cards) -->
+<div class="theme-showcase-grid">
+  
+  <!-- Card 1: Fast Food Theme -->
+  <div class="theme-card" onclick="openThemeNewTab('https://fast-food.bold-themes.com/main-demo/')">
+    <div class="card-image-box" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
+      <h3>Fast Food Theme</h3>
+    </div>
+    <div class="card-footer">
+      <span class="preview-btn">Preview Theme</span>
+    </div>
+  </div>
+
+  <!-- Card 2: Wengdo Theme -->
+  <div class="theme-card" onclick="openThemeNewTab('https://preview.themeforest.net/item/wengdo-fastfood-wordpress-theme/full_screen_preview/29201710')">
+    <div class="card-image-box" style="background: linear-gradient(135deg, #833ab4, #fd1d1d);">
+      <h3>Wengdo Theme</h3>
+    </div>
+    <div class="card-footer">
+      <span class="preview-btn">Preview Theme</span>
+    </div>
+  </div>
+
+  <!-- Card 3: Panpie Theme -->
+  <div class="theme-card" onclick="openThemeNewTab('https://radiustheme.com/demo/wordpress/themes/panpie/')">
+    <div class="card-image-box" style="background: linear-gradient(135deg, #f7b733, #fc4a1a);">
+      <h3>Panpie Theme</h3>
+    </div>
+    <div class="card-footer">
+      <span class="preview-btn">Preview Theme</span>
+    </div>
+  </div>
+
+  <!-- Card 4: Fooddy Theme -->
+  <div class="theme-card" onclick="openThemeNewTab('https://fooddy.ancorathemes.com/')">
+    <div class="card-image-box" style="background: linear-gradient(135deg, #ff9966, #ff5e62);">
+      <h3>Fooddy Theme</h3>
+    </div>
+    <div class="card-footer">
+      <span class="preview-btn">Preview Theme</span>
+    </div>
+  </div>
+
+</div>
+
+<style>
+/* Grid Design for 4 Cards */
+.theme-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.theme-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eaeaea;
+}
+
+.theme-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.card-image-box {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.card-image-box h3 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.card-footer {
+  padding: 15px;
+  text-align: center;
+  background: #fafafa;
+}
+
+.preview-btn {
+  background: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+</style>
+
+<script>
+function openThemeNewTab(url) {
+  // Yeh function card par click hote hi theme ko naye tab mein khol dega
+  window.open(url, '_blank', 'noopener,noreferrer');
+}
+</script>
